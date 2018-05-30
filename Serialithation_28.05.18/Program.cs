@@ -17,6 +17,15 @@ namespace Serialithation_28._05._18
         static void Main(string[] args)
         {
             // Reflections
+            Assembly a = Assembly.LoadFrom(@"\\dc\Студенты\ПКО\SEB-171.2\C#\Exception\GeneratorName.dll");
+
+            Type t = a.GetType();
+
+            return;
+            MyTestClass mtc = new MyTestClass(12.4, 4.2);
+            Reflection.MetjodReflection(mtc);
+
+            return;
             #region Reflections
             Person person = new Person("Kim", 30);
 
