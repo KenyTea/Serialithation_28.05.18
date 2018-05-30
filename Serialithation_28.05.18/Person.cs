@@ -9,6 +9,8 @@ namespace Serialithation_28._05._18
     [Serializable]
     public class Person
     {
+
+       
         public Person()
         {
 
@@ -21,6 +23,16 @@ namespace Serialithation_28._05._18
             this.Name = name;
             this.Age = age;
         }
+
+        public void Displey()
+        {
+            Console.WriteLine(Name, Age);
+        }
+
+        public int GetAge(int currentYear)
+        {
+            return currentYear = this.Age;
+        }
     }
 
     public class Human : Person
@@ -28,5 +40,10 @@ namespace Serialithation_28._05._18
         public Human(string name, int age) : base(name, age)
         {
         }
+
+
+
+
+     
     }
 }
